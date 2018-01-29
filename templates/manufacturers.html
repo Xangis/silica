@@ -1,0 +1,11 @@
+{% extends "base.htm" %}{% spaceless %}
+{% block title %}Silica Gel, Oxygen Absorber, and Desiccant Packets by Manufacturer | Silica-Gel.org{% endblock title %}
+{% block description %}Visual encyclopedia of silica gel and desiccant packets arranged by manufacturer.{% endblock description %}
+{% block content %}
+<h2>Manufacturers</h2>
+{% for tag in tags %}
+<p class="centered"><a href="/manufacturer/{{ tag.slug }}/">{{ tag.name }}</a></p>
+{% endfor %}
+<p class="centered"><a href="/">Back to the front page.</a></p>
+{% include 'adsense.inc' %}
+{% endblock content %}{% endspaceless %}

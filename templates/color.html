@@ -1,0 +1,14 @@
+{% extends "base.htm" %}{% spaceless %}
+{% block title %}{{ color|capfirst }} Silica Gel, Oxygen Absorber, and Desiccant Packets | Silica-Gel.org{% endblock title %}
+{% block description %}Visual encyclopedia of silica gel and desiccant packets arranged by color.{% endblock description %}
+{% block extrahead %}
+<link rel="canonical" href="http://silica-gel.org/color/{{ color.slug }}/" />
+{% endblock extrahead %}
+{% block content %}
+<h2>Packets Printed in {{ color|capfirst }}</h2>
+{% for packet in packets %}
+<a href="/packet/{{ packet.id }}/"><img src="/{{ packet.image }}.thumb.jpg" alt="Silica Gel Packet {{ packet.id }}" title="{{ packet.description }}"></a>
+{% endfor %}
+<p class="centered"><a href="/colors/">Back to all colors</a></p>
+{% include 'adsense.inc' %}
+{% endblock content %}{% endspaceless %}

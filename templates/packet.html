@@ -1,0 +1,24 @@
+{% extends "base.htm" %}{% spaceless %}<!DOCTYPE html>
+{% block title %}{{ packet.description }} | Silica-Gel.org{% endblock title %}
+{% block extrahead %}
+<link rel="canonical" href="http://silica-gel.org/packet/{{ packet.id }}/" />
+{% endblock extrahead %}
+{% block content %}
+<div class="banner">{% include 'adsense_responsive.inc' %}</div>
+<h1>{{ packet.description }}</h1>
+<p class="centered"><img src="/{{ packet.image }}" alt="{{ packet.description }}" /></p>
+{% if packet.rear_image %}<h2>Other Side</h2><p class="centered"><img src="/{{ packet.rear_image }}" alt="{{ packet.description }} (rear image)"</p>{% endif %}
+<p class="centered">
+{% if packet.manufacturer_id %}Manufacturer: <a href="/manufacturer/{{ packet.manufacturer_id.slug }}/">{{ packet.manufacturer_id }}</a>{% else %}Manufacturer: unknown{% endif %}<br />
+Text: {{ packet.text }}<br />
+{% if packet.text_language.all %}Print Language(s): {% for tag in packet.text_language.all %}<a href="/language/{{ tag.slug }}/">{{ tag.name }}</a>&nbsp;{% endfor %}<br/>{% endif %} 
+{% if packet.print_color.all %}Print Color(s): {% for tag in packet.print_color.all %}<a href="/color/{{ tag.slug }}/">{{ tag.name }}</a>&nbsp;{% endfor %}<br/>{% endif %} 
+{% if packet.found_in %}Found In: {{ packet.found_in }}<br />{% endif %}
+{% if packet.height %}Size: {{ packet.width }} mm x {{ packet.height }} mm<br/>{% endif %}
+{% if packet.weight %}Weight: {{ packet.weight }} grams<br/>{% endif %}
+</p>
+{% if packet.additional_info %}<p>{{ packet.additional_info|safe }}</p>{% endif %}
+<p class="centered"><a href="/">Back to the front page</a></p>
+<div class="banner">{% include 'adsense_responsive.inc' %}</div>
+{% endblock content %}
+{% endspaceless %}

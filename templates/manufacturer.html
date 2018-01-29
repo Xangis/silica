@@ -1,0 +1,15 @@
+{% extends "base.htm" %}{% spaceless %}<!DOCTYPE html>
+{% block title %}Silica Gel, Oxygen Absorber, and Desiccant Packets from {{ manufacturer.name }} | Silica-Gel.org{% endblock title %}
+{% block description %}Silica gel and desiccant packets produced by {{ manufacturer.name }}.{% endblock description %}
+{% block extrahead %}
+<link rel="canonical" href="http://silica-gel.org/manufacturer/{{ manufacturer.slug }}/" />
+{% endblock extrahead %}
+{% block content %}
+<h2>Packets Produced by {{ manufacturer.name }}</h2>
+{% if manufacturer.brands %}<h3>{{ manufacturer.name }} produces packets with these brands: {{ manufacturer.brands }}</h3>{% endif %}
+{% for packet in packets %}
+<a href="/packet/{{ packet.id }}/"><img src="/{{ packet.image }}.thumb.jpg" alt="Silica Gel Packet {{ packet.id }}" title="{{ packet.description }}"></a>
+{% endfor %}
+<p class="centered"><a href="/manufacturers/">Back to all manufacturers</a></p>
+{% include 'adsense.inc' %}
+{% endblock content %}{% endspaceless %}

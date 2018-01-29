@@ -1,0 +1,24 @@
+{% extends "base.htm" %}{% spaceless %}<!DOCTYPE html>
+{% block extrahead %}
+<link rel="canonical" href="http://silica-gel.org/" />
+{% endblock extrahead %}
+{% include 'analytics.inc' %}
+{% block content %}
+<p>Silica gel packets are used as a desiccant or oxygen absorber to protect items from moisture-related damage.  You should not eat them because they could be harmful to your health ("do not eat").</p>
+<img src="/images/candy.png" alt="Silica gel packet with 'candy' written on it." title="Do not eat this." />
+<p class="subhead">Click on a desiccant packet in the gallery below to view more details and a larger image.</p>
+<p>
+{% for packet in packets %}
+<a href="/packet/{{ packet.id }}/"><img src="{{ packet.image }}.thumb.jpg" alt="Silica Gel Packet {{ packet.id }}" title="{{ packet.description }}"></a> 
+{% endfor %}
+</p>
+{% include 'adsense.inc' %}
+<p>There are many manufacturers and brands of silica gel and desiccant packets, including "Fresh Pax", "Ageless", "O2-Zero", "Sorb-It", "Keplon", "Oxyfree", "Desiccare", "Sud-Chemie", "PillowPak", "Sorb Gel", "Topcod", "O-Buster", "Samsung", "Sun-Gel", and "TPG".  They are all represented on this site.</p>
+<p class="centered"><a href="/colors/">Browse packets by print color</a></p>
+<p class="centered"><a href="/languages/">Browse packets by language</a></p>
+<p class="centered"><a href="/manufacturers/">Browse packets by manufacturer</a></p>
+{% endblock content %}
+{% include 'copyright.inc' %}
+{% block extrafooter %}
+<p class="copyright"><a href="http://zetacentauri.com/privacy/">Privacy Policy</a></p>
+{% endblock extrafooter %}{% endspaceless %}
