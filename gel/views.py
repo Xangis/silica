@@ -52,4 +52,5 @@ def manufacturer(request, manufacturer):
     packets = SilicaPacket.objects.filter(manufacturer_id=manufacturer)
     return render_to_response('manufacturer.html', { 'packets': packets, 'manufacturer': manufacturer})
 
-
+def privacy(request):
+    return render_to_response('privacy.htm')

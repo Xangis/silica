@@ -7,6 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^$', 'gel.views.index'),
     url(r'^packet/(?P<id>\d+)/$', 'gel.views.packet'),
+    url(r'^privacy-policy/$', 'gel.views.privacy'),
     url(r'^colors/$', 'gel.views.colors'),
     url(r'^color/(?P<color>[-\w]+)/$', 'gel.views.color'),
     url(r'^languages/$', 'gel.views.languages'),
