@@ -47,7 +47,7 @@ class Language(models.Model):
         return self.name
 
 class Manufacturer(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=80)
     brands = models.CharField(max_length=120, null=True, blank=True)
     slug = models.CharField(max_length=30, null=True, blank=True)
     website = models.CharField(max_length=200, null=True, blank=True)
