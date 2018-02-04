@@ -1,4 +1,5 @@
 https://silica-gel.org/
+https://silica-gel.org/
 https://silica-gel.org/color/black/
 https://silica-gel.org/color/blue/
 https://silica-gel.org/color/green/
@@ -33,6 +34,7 @@ https://silica-gel.org/manufacturer/o2-zero/
 https://silica-gel.org/manufacturer/oxyfree/
 https://silica-gel.org/manufacturers/
 https://silica-gel.org/manufacturer/samsung/
+https://silica-gel.org/manufacturer/shenzhen-chunwang/
 https://silica-gel.org/manufacturer/sud-chemie/
 https://silica-gel.org/manufacturer/sun-gel/
 https://silica-gel.org/manufacturer/tianhua-tech-co/
@@ -121,4 +123,5 @@ https://silica-gel.org/packet/80/
 https://silica-gel.org/packet/81/
 https://silica-gel.org/packet/82/
 https://silica-gel.org/packet/83/
+https://silica-gel.org/packet/84/
 https://silica-gel.org/packet/9/
