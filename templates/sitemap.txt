@@ -13,6 +13,7 @@ https://silica-gel.org/language/dutch/
 https://silica-gel.org/language/english/
 https://silica-gel.org/language/french/
 https://silica-gel.org/language/german/
+https://silica-gel.org/language/italian/
 https://silica-gel.org/language/japanese/
 https://silica-gel.org/language/korean/
 https://silica-gel.org/language/portuguese/
@@ -124,4 +125,7 @@ https://silica-gel.org/packet/81/
 https://silica-gel.org/packet/82/
 https://silica-gel.org/packet/83/
 https://silica-gel.org/packet/84/
+https://silica-gel.org/packet/85/
+https://silica-gel.org/packet/86/
 https://silica-gel.org/packet/9/
+https://silica-gel.org/privacy-policy/
