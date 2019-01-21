@@ -43,6 +43,7 @@ https://silica-gel.org/manufacturer/topcod/
 https://silica-gel.org/manufacturer/tpg/
 https://silica-gel.org/manufacturer/uline/
 https://silica-gel.org/manufacturer/vitapac/
+https://silica-gel.org/manufacturer/wisesorbent-technology-llc/
 https://silica-gel.org/packet/1/
 https://silica-gel.org/packet/10/
 https://silica-gel.org/packet/11/
@@ -127,5 +128,9 @@ https://silica-gel.org/packet/83/
 https://silica-gel.org/packet/84/
 https://silica-gel.org/packet/85/
 https://silica-gel.org/packet/86/
+https://silica-gel.org/packet/87/
+https://silica-gel.org/packet/88/
+https://silica-gel.org/packet/89/
 https://silica-gel.org/packet/9/
 https://silica-gel.org/privacy-policy/
+https://silica-gel.org/robots.txt
