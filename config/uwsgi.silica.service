@@ -1,0 +1,16 @@
+[Unit]
+Description=uWSGI Service for the Silica-gel.org website.
+After=syslog.target
+
+[Service]
+Environment="PATH='/home/xangis/.virtualenvs/silica/bin'"
+ExecStart=/home/xangis/.virtualenvs/silica/bin/uwsgi --ini /var/django/silica/uwsgi.ini
+Restart=always
+KillSignal=SIGQUIT
+Type=notify
+StandardError=syslog
+NotifyAccess=all
+
+[Install]
+WantedBy=multi-user.target
+

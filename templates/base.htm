@@ -15,14 +15,6 @@
 {% include 'analytics.inc' %}
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=649581031815449";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div class="header">
 <h1><a href="/"><img src="/images/Logo.png" alt="Silica-Gel.org"></a></h1>
 <p class="subhead">A visual guide to silica gel and desiccant packets.</p>
@@ -32,7 +24,6 @@
 {% endblock content %}
 </div>
 <div class="footer">
-<div class="fb-like" data-href="https://www.facebook.com/pages/Silica-Gel/429277780580823" data-width="120" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
 {% include 'copyright.inc' %}
 {% block extrafooter %}
 {% endblock extrafooter %}
